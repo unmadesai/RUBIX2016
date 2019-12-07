@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Play|Orbitron:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/styleS.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	 <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/exhibitions.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/perspectiveRules.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    
+  	
+	<title>exhibitions</title>
+</head>
+<body>
+
+
+<div id="demo1">
+     <div id="particle-target" ></div> 
+ </div>
+
+        	
+	<div class="main">
+		<header class="topic"><a href="index.html"><img src="images/home.png" class="home" ></a>EXHIBITIONS</header>
+			<ul class="ch-grid " style="top:50px;">
+					<li>
+						<div class="ch-item" id="ch1">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back cd-btn1">
+									<h3>technical paper presentation</h3>
+									<p>21<sup>st</sup> February 2016 <a>Saturday</a></p>
+								</div>	
+							</div>
+						</div>
+					</li><li>
+						<div class="ch-item" id="ch2">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back cd-btn2">
+									<h3>project exhibition</h3>
+									<p>20<sup>th</sup> February 2016<a>Friday</a><br>21<sup>st</sup> February 2016<a>Saturday</a></p>
+								</div>	
+							</div>
+						</div>
+					
+					</ul>
+			</div>
+
+
+<div class="container cd-main-content">
+	<div class="cd-panel1 from-right" >
+		<header class="cd-panel-header">
+			<h1>TECHNICAL PAPER PRESENTATION</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panelcon">
+				<p>Have ideas simmering inside the corners pf your mind? Eager to present it to an equally interested audience? Well, here's your chance to do so. We mprovide you with n excellent platform to go ahead and give your idea the launch it needs. Be your most dynamic and your idea stands a chance to win the amazing prizes up for grabs.
+				<br><br><br>
+
+ Date: 21<sup>st</sup> February 2016<br><br>
+
+ Day: Saturday<br><br>
+
+ Time: 10am <br><br>
+
+  Cost: Rs. 100/- per team (Team of two) if your abstract is selected.<br><br></p>
+
+			</div> <!-- cd-panelcon -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+	<div class="cd-panel2 from-right" >
+		<header class="cd-panel-header">
+			<h1>PROJECT EXHIBITION</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panelcon">
+				<p>Display your finest technical skills by showcasing a working prototype of your idea. Exhibit your project in front of judges and stand a chance to get your idea patented as well as sponsored to take it to a higher level.
+				<br><br><br>
+
+ Date: 20<sup>th</sup> February 2016 and 21<sup>st</sup> February 2016<br><br>
+
+ Day: Friday and Saturday<br><br>
+
+ Time:10am to 4pm<br><br>
+
+  Cost: Rs. 150/- per team (Team of two) if your abstract is selected <br><br></p>
+
+			</div> <!-- cd-panelcon -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+        
+
+
+
+        <script src="js/jquery.logosDistort.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script>
+    var particles = true,
+        particleDensity,
+        options = {
+            effectWeight: 1,
+            outerBuffer: 1.08,
+            elementDepth: 220
+        };
+
+    $(document).ready(function() {
+
+        $("#demo1").logosDistort(options);
+
+        if (particles) {
+            particleDensity = window.outerWidth * 7.5;
+            if (particleDensity < 13000) {
+                particleDensity = 13000;
+				} else if (particleDensity > 20000) {
+                particleDensity = 20000;
+            }
+            return $('#particle-target').particleground({
+                dotColor: '#1ec5ee',
+                lineColor: '#0a4e90',
+                density: particleDensity.toFixed(0),
+                parallax: false
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+   
+</body>
+</html>

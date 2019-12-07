@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RUBIX 2016 || Simply Complex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/perspectiveRules.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.rwdImageMaps.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+	
+	<link rel="shortcut icon" href="../favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ws").hover(function(){
+			$("#ws").css("display","block");
+			$("#wsback").fadeIn(1000);
+			
+		},function(){
+			$("#ws").css("display","none");
+			$("#wsback").fadeOut(0);
+		});
+		$(".ex").hover(function(){
+			$("#ex").css("display","block");
+			$("#exback").fadeIn(1000);
+		},function(){
+			$("#ex").css("display","none");
+			$("#exback").fadeOut(0);
+		});
+		$(".fe").hover(function(){
+			$("#fe").css("display","block");
+			$("#feback").fadeIn(1000);
+		},function(){
+			$("#fe").css("display","none");
+			$("#feback").fadeOut(0);
+		});
+		$(".cm").hover(function(){
+			$("#cm").css("display","block");
+			$("#cmback").fadeIn(1000);
+		},function(){
+			$("#cm").css("display","none");
+			$("#cmback").fadeOut(0);
+		});
+		$(".se").hover(function(){
+			$("#se").css("display","block");
+			$("#seback").fadeIn(1000);
+		},function(){
+			$("#se").css("display","none");
+			$("#seback").fadeOut(0);
+		});
+		
+	});
+	</script>
+	
+	
+	<script type="text/javascript">
+	$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+	});
+	</script>
+</head>
+<body>
+
+
+
+ <div id="demo1">
+    <img alt="background" src="images/mackground5.jpg" />
+      <div id="particle-target" ></div> 
+    
+</div>
+<img alt="logo" src="images/pogo.png" class="head" />
+
+<section id="set-4">
+	<div class="hi-icon-wrap hi-icon-effect-4 hi-icon-effect-4a">
+		<a href="aboutus.html" id="sp" class="hi-icon hi-icon-chat" style="position:relative;top:275px;left:30px;">
+		<div class="mt" id="spt" style="position:relative;left:50px;top:-40px;width:100px;">About Us</div></a>
+		<a href="formcs.php" id="reg" class="hi-icon hi-icon-bookmark" style="position:relative;top:340px;left:60px;">
+		<div class="mt" id="regt" style="position:relative;left:50px;top:-40px;">Register</div></a>
+		<a href="grid.html" id="au" class="hi-icon hi-icon-user" style="position:relative;top:410px;left:15px;">
+		<div class="mt" id="aut" style="position:relative;left:50px;top:-40px;">Sponsors</div></a>
+		<a href="" id="cu" class="hi-icon hi-icon-mobile" style="position:relative;top:475px;left:-100px;">
+		<div class="mt" id="cut" style="position:relative;left:50px;top:-40px;width:100px;">Contact Us</div></a>
+	</div>
+</section>
+
+<div class="back" id="wsback" style="background-color:#00732F;"></div>
+<div class="back" id="exback" style="background-color:#8C000F;"></div>
+<div class="back" id="feback" style="background-color:#003373;"></div>
+<div class="back" id="cmback" style="background-color:#FFD200;"></div>
+<div class="back" id="seback" style="background-color:#FF4600;"></div>
+
+<p class="para" id="ws" style="color:#00732F;">WORKSHOPS</p>
+<p class="para" id="ex" style="color:#8C000F;">EXHIBHITIONS</p>
+<p class="para" id="fe" style="color:#003373;">FUN EVENTS</p>
+<p class="para" id="cm" style="color:#C49800;">COMPETITIONS</p>
+<p class="para" id="se" style="color:#FF4600;">SEMINARS</p>
+<div class="midbox">
+
+
+<img class="logo" src="images/masterbig.png" usemap="#planetmap" />
+<map name="planetmap">
+  <area class="ws" shape="poly" coords="205,123,260,151,261,293,389,235,392,82,330,54,205,123" href="workshops.html">
+  <area class="ex" shape="poly" coords="146,305,142,380,201,398,388,309,388,240,202,328,146,305" href="exhibitions.html">
+  <area class="fe" shape="poly" coords="15,161,137,223,137,375,13,312,15,161" href="funevents.html">
+  <area class="cm" shape="poly" coords="13,156,198,246,258,219,257,153,73,59,11,89,13,156" href="competitions.html">
+  <area class="se" shape="poly" coords="76,58,200,120,321,57,199,0,76,58" href="seminars.html">
+</map>
+</div>
+
+
+<script src="js/jquery.logosDistort.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script>
+    var particles = true,
+        particleDensity,
+        options = {
+            effectWeight: 1,
+            outerBuffer: 1.08,
+            elementDepth: 220
+        };
+
+    $(document).ready(function() {
+
+        $("#demo1").logosDistort(options);
+
+        if (particles) {
+            particleDensity = window.outerWidth * 7.5;
+            if (particleDensity < 13000) {
+                particleDensity = 13000;
+				} else if (particleDensity > 20000) {
+                particleDensity = 20000;
+            }
+            return $('#particle-target').particleground({
+                dotColor: '#1ec5ee',
+                lineColor: '#0a4e90',
+                density: particleDensity.toFixed(0),
+                parallax: false
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>

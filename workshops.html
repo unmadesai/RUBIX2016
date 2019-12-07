@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Play|Orbitron:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/styleS.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	 <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/workshops.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/perspectiveRules.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    
+  	
+	<title>workshops</title>
+</head>
+<body>
+
+
+<div id="demo1">
+     <div id="particle-target" ></div> 
+ </div>
+
+        	
+	<div class="main">
+		<header class="topic"><a href="index.html"><img src="images/home.png" class="home" ></a>WORKSHOPS</header>
+			<ul class="ch-grid " style="top:50px;">
+					<li>
+						<div class="ch-item" id="ch1">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back cd-btn1">
+									<h3>mobile making</h3>
+									<p>21<sup>st</sup> February 2016<a>Saturday</a></p>
+								</div>	
+							</div>
+						</div>
+					</li><li>
+						<div class="ch-item" id="ch2">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back cd-btn2">
+									<h3>internet of things</h3>
+									<p>20<sup>th</sup> February 2016<a>Friday</a></p>
+								</div>	
+							</div>
+						</div>
+					
+					</ul>
+			</div>
+
+
+
+
+
+
+<div class="container cd-main-content">
+	<div class="cd-panel1 from-right" >
+		<header class="cd-panel-header">
+			<h1>MOBILE MAKING</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panelcon" >
+				<p >
+ The smartphone nowadays has easily become the most important part of our lives. Learn how to build a working mobile phone, that can answer calls and receive/send text messages as well. Take part in this informative workshop and build your first actual phone!
+<br><br><br>
+
+ Date: 21<sup>st</sup> February 2016<br><br>
+
+ Day: Saturday<br><br>
+
+ Time: 10am to 4pm<br><br>
+
+  Cost: Rs. 900/- per person (Team of 4)<br><br></p>
+
+			</div> <!-- cd-panelcon -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+	<div class="cd-panel2 from-right" >
+		<header class="cd-panel-header">
+			<h1>INTERNET OF THINGS</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panelcon">
+				<p>Technology never fails to amaze us. And now, technology even offers you the chance to operate all your appliances from one place. This method is possible due to the Internet of Things, a concept that can simplify your entire life. Sign up for this workshop and know all that this brilliant technological advance has to offer.
+					<br><br><br>
+
+ Date: 20<sup>th</sup> February 2016<br><br>
+
+ Day: Friday<br><br>
+
+ Time: 12pm to 4pm<br><br>
+
+  Cost: Rs. 900/- per person (Team of 4)<br><br>
+</p>
+
+			</div> <!-- cd-panelcon -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+        
+
+
+
+        <script src="js/jquery.logosDistort.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script>
+    var particles = true,
+        particleDensity,
+        options = {
+            effectWeight: 1,
+            outerBuffer: 1.08,
+            elementDepth: 220
+        };
+
+    $(document).ready(function() {
+
+        $("#demo1").logosDistort(options);
+
+        if (particles) {
+            particleDensity = window.outerWidth * 7.5;
+            if (particleDensity < 13000) {
+                particleDensity = 13000;
+				} else if (particleDensity > 20000) {
+                particleDensity = 20000;
+            }
+            return $('#particle-target').particleground({
+                dotColor: '#1ec5ee',
+                lineColor: '#0a4e90',
+                density: particleDensity.toFixed(0),
+                parallax: false
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+   
+</body>
+</html>

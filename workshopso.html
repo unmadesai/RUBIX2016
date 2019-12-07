@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/styleS.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	 <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/workshops.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/perspectiveRules.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    
+  	
+	<title>RUBIX 2016 || Workshops</title>
+</head>
+<body>
+
+
+<div id="demo1">
+     <div id="particle-target" ></div> 
+ </div>
+
+        	
+	<div class="main">
+			<ul class="ch-grid " style="top:50px;">
+					<li>
+						<div class="ch-item" id="ch1">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back cd-btn1">
+									<h3>mobile making</h3>
+									<p>date, day <a>time</a></p>
+								</div>	
+							</div>
+						</div>
+					</li><li>
+						<div class="ch-item" id="ch2">				
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back cd-btn2">
+									<h3>internet of things</h3>
+									<p>date, day <a>time</a></p>
+								</div>	
+							</div>
+						</div>
+					
+					</ul>
+			</div>
+
+
+
+
+
+
+<div class="container cd-main-content">
+	<div class="cd-panel1 from-right" >
+		<header class="cd-panel-header">
+			<h1>event 1</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<p>sequi ipsa, voluptatem ratione illo ullam quaerat qui, vel dolorum eligendi similique inventore quisquam perferendis reprehenderit quos officia! Maxime aliquam, soluta reiciendis beatae quisquam. Alias porro facilis obcaecati et id, corporis accusamus? Ab porro fuga consequatur quisquam illo quae quas tenetur.</p>
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+	<div class="cd-panel2 from-right" >
+		<header class="cd-panel-header">
+			<h1>event 2</h1>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam magnam accusamus obcaecati nisi eveniet quo veniam quibusdam veritatis autem accusantium doloribus nam mollitia maxime explicabo nemo quae aspernatur impedit cupiditate dicta m explicabo, similique reprehenderit at. Iusto totam vitae blanditiis. Culpa, earum modi rerum velit voluptatum voluptatibus debitis, architecto aperiam vero tempora ratione sint ullam voluptas non! Odit sequi ipsa, voluptatem ratione illo ullam quaerat qui, vel dolorum eligendi similique inventore quisquam perferendis reprehenderit quos officia! Maxime aliquam, soluta reiciendis beatae quisquam. Alias porro facilis obcaecati et id, corporis accusamus? Ab porro fuga consequatur quisquam illo quae quas tenetur.</p>
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+        
+
+
+
+        <script src="js/jquery.logosDistort.min.js"></script>
+<script src="js/jquery.particleground.min.js"></script>
+<script>
+    var particles = true,
+        particleDensity,
+        options = {
+            effectWeight: 1,
+            outerBuffer: 1.08,
+            elementDepth: 220
+        };
+
+    $(document).ready(function() {
+
+        $("#demo1").logosDistort(options);
+
+        if (particles) {
+            particleDensity = window.outerWidth * 7.5;
+            if (particleDensity < 13000) {
+                particleDensity = 13000;
+				} else if (particleDensity > 20000) {
+                particleDensity = 20000;
+            }
+            return $('#particle-target').particleground({
+                dotColor: '#1ec5ee',
+                lineColor: '#0a4e90',
+                density: particleDensity.toFixed(0),
+                parallax: false
+            });
+        }
+    });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+   
+</body>
+</html>
